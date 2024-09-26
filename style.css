@@ -1,0 +1,41 @@
+table {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+th {
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+td {
+  background-color: lightpink;
+  border: 1px solid black;
+}
+
+.negative {
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 15px;
+}
+
+form {
+  line-height: 30px;
+  padding: 10px;
+  color: green;
+}
