@@ -3,52 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rizz</title>
+    <meta property="og:title" content="The RizzTable | Joe Hosten" />
+    <meta property="og:description" content="This small project was made during a Web Development lab at Coventry University. While being a 'joke' at heart, it demonstrates some of the basic elements of a webpage." />
+    <meta property="og:image" content="https://assets.skyhawk.joehosten.me/me.jpeg" />
+    <meta property="og:type" content="website" />
+    <title>The RizzTable | Joe Hosten</title>
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>The Rizz Scale</header>
+
     <p class="text-center">This is the best image ever</p>
     <img
-      src="https://assets.skyhawk.joehosten.me/negative-games/assets/TOS.png"
+      src="https://assets.skyhawk.joehosten.me/sponsors/cats/soggy%20cat.jpg"
       alt="Negative Games TOS"
       class="negative"
     />
-    <header>The Rizz Scale</header>
+
     <table class="rizz">
-      <!-- Row one -->
-      <tr>
-        <th>People</th>
-        <th>Rizz (%)</th>
-      </tr>
-      <!-- Row two -->
-      <tr>
-        <td>Joe</td>
-        <td>100</td>
-      </tr>
-      <!-- Row three -->
-      <tr>
-        <td>Mani</td>
-        <td>50</td>
-      </tr>
-      <!-- Row four -->
-      <tr>
-        <td>Faizan</td>
-        <td>40</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>People</th>
+          <th>Rizz (%)</th>
+        </tr>
+      </thead>
+      <tbody id="rizzTable">
+        <tr>
+          <td>Joe</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Mani</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Faizan</td>
+          <td>40</td>
+        </tr>
+      </tbody>
     </table>
 
-    <form action="" method="GET">
-      <label for="email">Your email (Required)</label>
-      <input id="email" type="email" name="email" required /><br />
-      <label for="name">Your name (Required)</label>
-      <input id="name" type="text" name="name" required /><br />
-      <label for="gender">Gender (Required)</label>
-      <select id="gender" name="gender" required>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option></select
-      ><br />
-      <input id="submit" type="submit" name="Submit" required />
+    <img src="/flight.gif" width="200px" class="negative" />
+
+    <form id="rizzForm">
+      <label for="name">Get your rizz. Enter your name.</label>
+      <input id="name" type="text" name="name" required />
+      <input id="submit" type="submit" value="Submit" />
     </form>
+
+    <p>&copy; 2024 Joe Hosten | <a href="https://joehosten.me">JH Dev</a></p>
+
+    <script src="script.js"></script>
   </body>
 </html>
